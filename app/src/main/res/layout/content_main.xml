@@ -12,15 +12,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main"
-    >
+    tools:showIn="@layout/activity_main">
 
     <android.support.v7.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/symbolic_tick_prb_caption"
-        android:textSize="@dimen/sample_caption_text_size"
-        />
+        android:textSize="@dimen/sample_caption_text_size" />
 
     <io.techery.properratingbar.ProperRatingBar
         android:id="@+id/upperRatingBar"
@@ -34,24 +32,21 @@
         app:prb_symbolicTick="$"
         app:prb_symbolicTickNormalColor="@android:color/darker_gray"
         app:prb_symbolicTickSelectedColor="@android:color/holo_green_dark"
-        app:prb_totalTicks="5"
-        />
+        app:prb_totalTicks="5" />
 
     <Button
         android:id="@+id/toggleTick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/switch_tick_button_caption"
         android:layout_marginBottom="15dp"
-        />
+        android:text="@string/switch_tick_button_caption" />
 
     <android.support.v7.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/drawable_tick_prb_caption"
-        android:textSize="@dimen/sample_caption_text_size"
-        />
+        android:textSize="@dimen/sample_caption_text_size" />
 
     <io.techery.properratingbar.ProperRatingBar
         android:id="@+id/lowerRatingBar"
@@ -59,42 +54,48 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="@dimen/sample_default_margin"
+        app:prb_clickable="true"
         app:prb_defaultRating="4"
         app:prb_tickNormalDrawable="@drawable/ic_star_normal"
         app:prb_tickSelectedDrawable="@drawable/ic_star_selected"
         app:prb_tickSpacing="@dimen/sample_prb_tick_spacing"
-        app:prb_totalTicks="7"
-        app:prb_clickable="true"
-        />
+        app:prb_totalTicks="7" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/getRatingButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/get_rating_button_caption"
-            />
+            android:text="@string/get_rating_button_caption" />
 
         <Button
             android:id="@+id/setRatingButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/set_rating_button_caption"
-            />
+            android:text="@string/set_rating_button_caption" />
 
         <Button
             android:id="@+id/toggleClicksEnabledButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/disable_clicks_button_caption"
-            />
+            android:text="@string/disable_clicks_button_caption" />
     </LinearLayout>
+
+    <io.techery.properratingbar.ProperRatingBar
+        android:layout_width="80dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/sample_default_margin"
+        app:prb_clickable="true"
+        app:prb_defaultRating="3"
+        app:prb_tickNormalDrawable="@drawable/ic_rate_n"
+        app:prb_tickSelectedDrawable="@drawable/ic_rate_s"
+        app:prb_totalTicks="5" />
 </LinearLayout>
